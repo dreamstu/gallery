@@ -1,0 +1,23 @@
+{
+  "name": "upload",
+  "version": "0.0.1",
+  "description": "文件上传-通用组件",
+  "keywords": [],
+  "homepage": "",
+  "author": "<cjxsgn@163.com:dreamstu>",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "licenses": "MIT",
+  "devDependencies": {
+    "grunt-build-seajs":"~0.0.1"
+  },
+  "scripts": {
+    "test": "spm test",
+    "build": "spm build"
+  }
+}

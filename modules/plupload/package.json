@@ -1,0 +1,23 @@
+{
+  "name": "plupload",
+  "version": "2.1.1",
+  "description": "Plupload - multi-runtime File Uploader",
+  "keywords": [],
+  "homepage": "",
+  "author": "http://www.plupload.com/contributing",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "licenses": "MIT",
+  "devDependencies": {
+    "grunt-build-seajs":"~0.0.1"
+  },
+  "scripts": {
+    "test": "spm test",
+    "build": "spm build"
+  }
+}

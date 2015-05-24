@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>文件上传插件</title>
+	<style>
+	#container{
+		width: 100%;
+		height: 200px;
+		background: #eee;
+	}
+	</style>
+</head>
+<body>
+	
+	<div id="container">
+	    <a class="btn btn-default btn-lg " id="pickfiles" href="#" >
+	        <i class="glyphicon glyphicon-plus"></i>
+	        <sapn>选择文件</sapn>
+	    </a>
+	</div>
+
+	<script type="text/javascript" src="http://static.qipeipu.com/crm/common/sea.js"></script>
+	<script type="text/javascript">
+	seajs.config({
+		base:'../modules',
+		alias:{
+			plupload:'plupload/index',
+			upload:'upload/index'
+		}
+	});
+	seajs.use('upload',function(upload){
+		var up = new upload({
+			container:'container',
+			qiniu:{
+				uptoken:'',
+				domain:''
+			}
+		});
+	});
+	</script>
+</body>
+</html>
